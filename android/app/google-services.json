@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721179155499",
+    "project_id": "lojinhaflutter-99f4e",
+    "storage_bucket": "lojinhaflutter-99f4e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721179155499:android:1b6243fb431e9f7167de6e",
+        "android_client_info": {
+          "package_name": "br.com.example.lojinha_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721179155499-fbv0tfq0ght1968pg035q6g0pq5qtgk7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABKG-A715pyyMb7xP0WMrLO8nPV7mYfV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721179155499-fbv0tfq0ght1968pg035q6g0pq5qtgk7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
