@@ -30,5 +30,4 @@ class ProductData{
       "price": price
     };
   }
-
 }

@@ -8,6 +8,7 @@ import 'package:lojinha_virtual/screens/cart_screen.dart';
 import 'package:lojinha_virtual/screens/login_screen.dart';
 
 class ProductScreen extends StatefulWidget {
+
   final ProductData product;
 
   ProductScreen(this.product);
@@ -114,6 +115,7 @@ class _ProductScreenState extends State<ProductScreen> {
                       cartProduct.quantity = 1;
                       cartProduct.productid = product.id;
                       cartProduct.category = product.category;
+                      cartProduct.productData = product;
 
                       CartModel.of(context).addCartItem(cartProduct);
 

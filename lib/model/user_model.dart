@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-
+import 'dart:async';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:scoped_model/scoped_model.dart';
 
@@ -25,6 +25,7 @@ class UserModel extends Model{
 
   void signUp({@required Map<String, dynamic> userData, @required String pass,
     @required VoidCallback onSucces, @required VoidCallback onFail}){
+
     isLoading = true;
     notifyListeners();
 
@@ -33,13 +34,14 @@ class UserModel extends Model{
         password: pass
     ).then((user) async {
       firebaseUser = user;
+
       await _saveUserData(userData);
 
       onSucces();
       isLoading = false;
       notifyListeners();
 
-    }).catchError((erro){
+    }).catchError((e){
 
       onFail();
       isLoading = false;
@@ -65,7 +67,7 @@ class UserModel extends Model{
               isLoading = false;
               notifyListeners();
 
-    }).catchError((erro){
+    }).catchError((e){
       onFail();
       isLoading = false;
       notifyListeners();
